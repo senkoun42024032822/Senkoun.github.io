@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Études</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+.menu{background:#222f3e;color:white;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;flex-wrap:wrap}
+.logo{font-weight:bold}
+.menu-links{list-style:none;display:flex;margin:0;padding:0}
+.menu-links a{color:white;text-decoration:none;padding:12px 15px}
+.menu-links a.active{background:#1dd1a1;color:#222f3e;border-radius:5px}
+.menu-icon{display:none;font-size:26px}
+#menu-toggle{display:none}
+@media(max-width:768px){
+.menu-links{display:none;flex-direction:column;width:100%}
+.menu-icon{display:block}
+#menu-toggle:checked + .menu-icon + .menu-links{display:flex}
+}
+header{background:#1e3799;color:crimson;padding:20px;text-align:center}
+section{margin:30px;background:white;padding:25px;border-radius:8px}
+</style>
+</head>
+
+<body>
+<nav class="menu">
+<div class="logo">Portfolio</div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<ul class="menu-links">
+<li><a href="appropos.html">À propos</a></li>
+<li><a href="etude.html" class="active">Études</a></li>
+<li><a href="competence.html">Compétences</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="photos.html">Photos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<header><h1>Études</h1></header>
+<section>
+<p>Mon parcours académique
+    J’ai commencé mon parcours scolaire à l’école primaire, où j’ai acquis les bases fondamentales de l’éducation, <br>
+    notamment la lecture, l’écriture et le calcul. Cette première étape a été essentielle pour développer <br>
+    ma discipline et mon goût pour l’apprentissage.
+    J’ai ensuite poursuivi mes études au niveau secondaire, période durant laquelle j’ai renforcé mes connaissances <br>
+    générales et découvert un intérêt particulier pour les matières scientifiques et techniques. <br>
+    Cette étape m’a permis de développer mon esprit logique et analytique.
+    Après l’obtention de mon diplôme de fin d’études secondaires, j’ai intégré l’enseignement supérieur,<br>
+     en m’orientant vers le génie informatique. Actuellement, je poursuis mes études à l’université, où je me forme aux bases de la programmation, <br>
+     aux systèmes informatiques et au développement web.
+    Au cours de cette formation, j’ai acquis des compétences en programmation (C, C++), en HTML et CSS, ainsi qu’en méthodologie de travail informatique.<br>
+     Mon parcours académique reflète une évolution progressive vers le domaine du numérique, en accord avec mes ambitions professionnelles.<br>
+</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Projets</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+.menu{background:#222f3e;color:white;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;flex-wrap:wrap}
+.logo{font-weight:bold}
+.menu-links{list-style:none;display:flex;margin:0;padding:0}
+.menu-links a{color:white;text-decoration:none;padding:12px 15px}
+.menu-links a.active{background:#1dd1a1;color:#222f3e;border-radius:5px}
+.menu-icon{display:none;font-size:26px}
+#menu-toggle{display:none}
+@media(max-width:768px){
+.menu-links{display:none;flex-direction:column;width:100%}
+.menu-icon{display:block}
+#menu-toggle:checked + .menu-icon + .menu-links{display:flex}
+}
+header{background:#6a89cc;color:red;padding:20px;text-align:center}
+section{margin:30px}
+.projet{background:white;padding:20px;margin-bottom:15px;border-left:6px solid #6a89cc;border-radius:5px}
+</style>
+</head>
+
+<body>
+
+<nav class="menu">
+<div class="logo">Portfolio</div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<ul class="menu-links">
+<li><a href="appropos.html">À propos</a></li>
+<li><a href="etude.html">Études</a></li>
+<li><a href="competence.html">Compétences</a></li>
+<li><a href="projets.html" class="active">Projets</a></li>
+<li><a href="photos.html">Photos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<header><h1>Mes projets</h1></header>
+
+<section>
+<div class="projet">
+    <h3>Projet actuel</h3>
+    <p>
+    Mon projet actuel consiste à concevoir et développer un site web personnel de type portfolio en utilisant les langages HTML et CSS.
+    Ce site comporte plusieurs pages reliées par un menu de navigation commun et responsive.
+    L’objectif de ce projet est de mettre en pratique les notions apprises en langage web.
+    </p>
+</div>
+
+<div class="projet">
+<h3>Projet futur</h3>
+<p>Mon projet futur est de faire évoluer ce portfolio en y intégrant des fonctionnalités plus avancées.
+    Je souhaite notamment ajouter de l’interactivité avec JavaScript et développer des applications web dynamiques.
+</p>
+</div>
+</section>
+
+</body>
+</html>

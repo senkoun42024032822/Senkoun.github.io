@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Photos</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+.menu{background:#222f3e;color:white;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;flex-wrap:wrap}
+.logo{font-weight:bold}
+.menu-links{list-style:none;display:flex;margin:0;padding:0}
+.menu-links a{color:white;text-decoration:none;padding:12px 15px}
+.menu-links a.active{background:#1dd1a1;color:#222f3e;border-radius:5px}
+.menu-icon{display:none;font-size:26px}
+#menu-toggle{display:none}
+@media(max-width:768px){
+.menu-links{display:none;flex-direction:column;width:100%}
+.menu-icon{display:block}
+#menu-toggle:checked + .menu-icon + .menu-links{display:flex}
+}
+header{background:#e58e26;color:white;padding:20px;text-align:center}
+.gallery{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin:30px}
+.gallery img{width:150px;height:150px;border-radius:10px;border:2px solid #ccc}
+</style>
+</head>
+
+<body>
+
+<nav class="menu">
+<div class="logo">Portfolio</div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<ul class="menu-links">
+<li><a href="appropos.html">À propos</a></li>
+<li><a href="etude.html">Études</a></li>
+<li><a href="competence.html">Compétences</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="photos.html" class="active">Photos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<header><h1>Galerie photos</h1></header>
+
+<div class="gallery">
+<img src="image/img1.jpg" alt="Photo 1">
+<img src="image/img2.jpg" alt="Photo 2">
+<img src="image/img3.jpg" alt="Photo 3">
+<img src="image/img4.jpg" alt="Photo 4">
+<img src="image/img5.jpg" alt="Photo 5">
+<img src="image/img6.jpg" alt="Photo 6">
+<img src="image/img7.jpg" alt="Photo 7">
+</div>
+
+</body>
+</html>

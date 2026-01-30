@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accueil - Portfolio</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+/* MENU */
+.menu{
+    background:#222f3e;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:10px 20px;
+    flex-wrap:wrap;
+}
+.menu-links{
+    list-style:none;
+    display:flex;
+    margin:0;
+    padding:0;
+}
+.menu-links a{
+    color:white;
+    text-decoration:none;
+    padding:12px 15px;
+}
+.menu-links a.active{
+    background:#1dd1a1;
+    color:#222f3e;
+    border-radius:5px;
+}
+.menu-icon{display:none;font-size:26px}
+#menu-toggle{display:none}
+
+@media(max-width:768px){
+.menu-links{display:none;flex-direction:column;width:100%}
+.menu-icon{display:block}
+#menu-toggle:checked + .menu-icon + .menu-links{display:flex}
+}
+
+header{
+    padding:60px 20px;
+    background:#0a3d62;
+    color:white;
+}
+a.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#1dd1a1;
+    color:#222f3e;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="menu">
+<div class="logo">Portfolio</div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<ul class="menu-links">
+<li><a href="index.html" class="active">Accueil</a></li>
+<li><a href="appropos.html">À propos</a></li>
+<li><a href="etude.html">Études</a></li>
+<li><a href="competence.html">Compétences</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="photos.html">Photos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<header>
+<h1>Bienvenue sur mon porte folio</h1>
+<p>Étudiant en Génie Informatique L2 – UMI</p>
+<a href="appropos.html" class="btn">Découvrir mon site web</a>
+</header>
+
+</body>
+</html>

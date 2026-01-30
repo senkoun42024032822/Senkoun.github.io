@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>À propos</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+
+/* MENU */
+.menu{background:#222f3e;color:white;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;flex-wrap:wrap}
+.logo{font-weight:bold}
+.menu-links{list-style:none;display:flex;margin:0;padding:0}
+.menu-links a{color:white;text-decoration:none;padding:12px 15px;display:block}
+.menu-links a:hover{background:#576574}
+.menu-links a.active{background:#1dd1a1;color:#222f3e;border-radius:5px}
+.menu-icon{display:none;font-size:26px;cursor:pointer}
+#menu-toggle{display:none}
+
+@media(max-width:768px){
+.menu-links{display:none;width:100%;flex-direction:column}
+.menu-icon{display:block}
+#menu-toggle:checked + .menu-icon + .menu-links{display:flex}
+}
+
+header{background:#0a3d62;color:red;padding:20px;text-align:center}
+section{margin:30px;background:blueviolet;padding:25px;border-radius:8px}
+.appropos-image img{
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="menu">
+<div class="logo">Portfolio</div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<ul class="menu-links">
+<li><a href="appropos.html" class="active">À propos</a></li>
+<li><a href="etude.html">Études</a></li>
+<li><a href="competence.html">Compétences</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="photos.html">Photos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<header><h1>À propos de moi</h1></header>
+
+<section class="appropos">
+<h2>appropos de moi</h2>
+<div class="appropos-container">
+    <div class="appropos-texte">
+        <p>Je m'appelle Senkoun cherif Je suis étudiant en Génie Informatique à l’Université Mercure International (UMI), passionné par le développement web.
+    J’aime comprendre le fonctionnement des systèmes informatiques et créer des solutions simples et efficaces à travers la programmation.
+Au cours de ma formation, j’ai acquis des bases solides en HTML, CSS, ainsi qu’en langages de programmation comme le C et le C++. 
+Je m’intéresse particulièrement à la création de sites web modernes, organisés et responsives, capables de s’adapter à tous les supports.
+Je suis une personne motivée, sérieuse et persévérante. J’accorde une grande importance à l’apprentissage continu et au travail bien fait. 
+Chaque projet est pour moi une occasion de renforcer mes compétences et de progresser vers mon objectif professionnel.
+Mon ambition est de devenir un informaticien compétent et autonome, capable de contribuer efficacement à des projets technologiques et d’évoluer dans le domaine du numérique.
+</p>
+    </div>
+    <div class="appropos-image">
+        <img src="image/img3.jpg" alt="photo de profil">
+    </div>
+</div>
+</section>
+
+</body>
+</html>

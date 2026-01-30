@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Compétences</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+.menu{background:#222f3e;color:white;display:flex;justify-content:space-between;padding:10px 20px;flex-wrap:wrap}
+.menu-links{list-style:none;display:flex;margin:0;padding:0}
+.menu-links a{color:white;text-decoration:none;padding:12px 15px}
+.menu-links a.active{background:#1dd1a1;color:#222f3e;border-radius:5px}
+.menu-icon{display:none;font-size:26px}
+#menu-toggle{display:none}
+@media(max-width:768px){
+.menu-links{display:none;flex-direction:column;width:100%}
+.menu-icon{display:block}
+#menu-toggle:checked + .menu-icon + .menu-links{display:flex}
+}
+section{
+    margin:30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 800px;
+}
+header{background:#38ada9;color:white;padding:20px;text-align:center}
+ul{margin:30px;padding:0;list-style:none}
+li{background:black;margin:10px auto;padding:12px;border-radius:5px;border-radius: 5px;max-width: 600px;}
+</style>
+</head>
+
+<body>
+<nav class="menu">
+<div class="logo">Portfolio</div>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<ul class="menu-links">
+<li><a href="appropos.html">À propos</a></li>
+<li><a href="etude.html">Études</a></li>
+<li><a href="competence.html" class="active">Compétences</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="photos.html">Photos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<header><h2>Mes compétences</h2>
+
+    <h3>Compétences techniques</h3>
+    <ul>
+    <li>HTML5 : création de pages web structurées</li>
+    <li>CSS3 : mise en forme et design responsive</li>
+    <li>Programmation en C / C++ : bases de la programmation</li>
+    <li>Git et GitHub : notions de base</li>
+    </ul>
+    
+    <h3>Compétences informatiques générales</h3>
+    <ul>
+    <li>Utilisation des outils informatiques</li>
+    <li>Gestion de fichiers et de projets</li>
+    <li>Recherche d’informations techniques</li>
+    </ul>
+    
+    <h3>Compétences personnelles</h3>
+    <ul>
+    <li>Motivation et persévérance</li>
+    <li>Esprit logique</li>
+    <li>Travail en équipe</li>
+    </ul></header>
+</body>
+</html>
